@@ -2,9 +2,9 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #141414; /* negre suau */
+  background-color: #141414; /* Negre suau */
   color: #e4ffe4;
-  padding-top: 220px; /* augmentat perquè el menú no tapi res */
+  padding-top: 220px; /* Augmentat perquè el menú no tapi res */
   font-size: 20px;
 }
 
@@ -51,6 +51,49 @@ nav ul li a:hover {
 
 nav ul li a.active {
   background-color: #7ff77f;
+}
+
+/* Barra de navegació lateral */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* Llargada normal de la barra */
+  height: 100%;
+  background-color: #111; /* Fons fosc */
+  color: #fff;
+  padding-top: 50px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  width: 100%;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #b2b2b2;
+  font-size: 18px;
+  display: block;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #33cc33; /* Verd GTA */
+  color: #1a1a1a;
+}
+
+.navbar ul li a.active {
+  background-color: #33cc33;
+  color: #1a1a1a;
 }
 
 /* Formulari */
@@ -191,7 +234,7 @@ section img:hover::after {
   80%      { transform: translate(1.5px, 0); }
 }
 
-
+/* Costos GTA */
 .costos-gta {
   background-color: #111; /* Fons fosc */
   color: #eee; /* Text clar */
@@ -231,3 +274,73 @@ section img:hover::after {
 .costos-gta li {
   margin-bottom: 0.5rem;
 }
+
+/* Reset de margenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a; /* Fondo oscuro estilo GTA */
+  color:
+}
+
+/* Estilo general para la sección de contenido */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Aumento del espacio entre los párrafos */
+  margin: 40px auto; /* Mayor margen alrededor de la sección */
+  max-width: 1000px; /* Mayor ancho máximo */
+  padding: 40px; /* Más espacio alrededor del contenido */
+  border-radius: 15px; /* Bordes más redondeados */
+  background-color: #2b2a2a; /* Fondo oscuro para ambientar el GTA */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+  color: #fff; /* Texto blanco para resaltar sobre el fondo oscuro */
+}
+
+/* Estilo para los párrafos */
+.content p {
+  padding: 30px; /* Mayor espacio dentro de cada párrafo */
+  background-color: rgb(41, 41, 41); /* Fondo oscuro para los párrafos */
+  border: 4px solid #4CAF50; /* Borde verde más grueso */
+  border-radius: 12px; /* Borde redondeado más marcado */
+  font-size: 20px; /* Fuente más grande */
+  line-height: 1.8; /* Espacio entre líneas más grande */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: left; /* Alineación a la izquierda */
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra para mayor profundidad */
+}
+
+/* Decoración adicional en los bordes con un toque GTA */
+.content p::before {
+  content: '';
+  position: absolute;
+  top: -8px; /* Aumento del borde decorativo */
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background-image: linear-gradient(45deg, #4CAF50, #000); /* Gradiente de verde a negro */
+  border-radius: 12px; /* Bordes redondeados para el decorado */
+  z-index: -1;
+  opacity: 0.6; /* Aumento de opacidad para hacerlo más visible */
+}
+
+/* Efecto hover */
+.content p:hover {
+  transform: scale(1.05); /* Aumento del tamaño al pasar el ratón */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+  cursor: pointer;
+}
+
+/* Espaciado entre párrafos */
+.content p + p {
+  margin-top: 20px; /* Mayor separación entre los párrafos */
+}
+
